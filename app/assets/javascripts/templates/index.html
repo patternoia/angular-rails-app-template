@@ -1,0 +1,8 @@
+<header>
+  <h1 class="text-center col-md-6 col-md-offset-3">Welcome to <%= @app_name.humanize %></h1>
+</header>
+<aside class="flash" ng-click="showAlert=false">
+  <article ng-show="showAlert" flash-alert duration="0" active-class="in alert" class="col-md-6 col-md-offset-3 col-sm-12">
+    {{flash.message}}
+  </article>
+</aside>
